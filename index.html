@@ -13,39 +13,42 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 auto">
-        <img src="https://cdn-icons-png.flaticon.com/512/26/26789.png" class="nav-img" alt="">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container pl-3 pr-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/26/26789.png" class="nav-img" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#favourite">Favourite Albums <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#reviews">Reviews <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Register <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#footer">Footer <span class="sr-only">(current)</span></a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#favourite">Favourite Albums <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#reviews">Reviews <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Register <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#footer">Footer <span class="sr-only">(current)</span></a>
+                    </li>
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0 ml-4">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search an Album" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ml-4">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search an Album" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
     <div class="container mb-5 mt-5">
-        <div id="about-me">
+        <div class="collapse show" id="about-me">
             <div class="row text-center mt-5">
                 <div class="col mt-3">
                     <h1>About me</h1>
@@ -70,7 +73,8 @@
                 Hide/Show About me
             </button>
         </div>
-        <div class="d-felx justify-content-center row row-cols-sm-2 row-cols-md-3 row-cols-lg-4" id="album-section">
+        <div class="collapse show d-felx justify-content-center row row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
+            id="album-section">
             <div class="col mb-4">
                 <div class="card h-100">
                     <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Origins_cover.png" class="card-img-top"
@@ -183,7 +187,7 @@
                 Hide/Show Albums
             </button>
         </div>
-        <div class="card mb-3" id="favourite-album">
+        <div class="collapse show card mb-3" id="favourite-album">
             <img src="https://pbs.twimg.com/media/B3XpOqTIEAA91ta?format=png&name=small" class="card-img-top" alt="...">
             <div class="card-body text-center">
                 <h5 class="card-title">Favourite Album</h5>
@@ -200,7 +204,7 @@
                 Hide Favourite Album
             </button>
         </div>
-        <div id="album-table">
+        <div class="collapse show" id="album-table">
             <h2 class="text-center mt-5 mb-4">Hall Of Shame</h2>
             <table class="table table-hover mb-5">
                 <thead>
@@ -258,7 +262,7 @@
                 Hide Table
             </button>
         </div>
-        <div class="just-covers" id="image-wall">
+        <div class="collapse show just-covers" id="image-wall">
             <div class="row row-cols-5 no-gutters mb-5">
                 <div class="col"><img src="https://marcsfirma.com/21/wp-content/uploads/2020/09/NEFFEX.png"
                         class="img-fluid" alt="">
