@@ -5,3 +5,7 @@ html {
 .nav-img {
     width: 40px;
 }
+
+.card.h-100>.card-img-top {
+    cursor: pointer;
+}
