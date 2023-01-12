@@ -9,3 +9,52 @@ html {
 .card.h-100>.card-img-top {
     cursor: pointer;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.header-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    animation: fadeIn 5s;
+}
+
+.card.h-100 {
+    position: relative;
+}
+
+.badge.badge-primary {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn.btn-info {
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.btn.btn-info:hover {
+    display: inline;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.btn-outline-danger {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+tr:hover .btn-outline-danger {
+    opacity: 1;
+}
